@@ -17,7 +17,7 @@ class SpeciesController < ApplicationController
 
   def update
     @species = Species.find(params[:id])
-    @species.update(species_params)
+    @species.update!(species_params)
   end
 
   def destroy

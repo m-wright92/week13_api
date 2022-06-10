@@ -11,13 +11,13 @@ class PetsController < ApplicationController
   end
 
   def create
-    @pet = Pet.create(pet_params)
+    @pet = Pet.create!(pet_params)
     json_response(@pet)
   end
 
   def update
-    @pet = Quote.find(params[:id])
-    @pet.update(pet_params)
+    @pet = Pet.find(params[:id])
+    @pet.update!(pet_params)
   end
 
   def destroy
