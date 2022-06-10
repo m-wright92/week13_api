@@ -1,3 +1,3 @@
 class Pet < ApplicationRecord
-  belongs_to_one :species
+  belongs_to :species
 end
