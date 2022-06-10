@@ -3,6 +3,6 @@ class Pet < ApplicationRecord
   validates :name, presence: true
   validates :klass, presence: true
   validates :level, presence: true
-  validates :level, numericality: {in: 1..20}
+  validates_inclusion_of :level, in: 1..20
   validates :species, presence: true
 end
