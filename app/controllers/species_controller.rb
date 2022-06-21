@@ -19,16 +19,16 @@ class SpeciesController < ApplicationController
     @species = Species.find(params[:id])
     if @species.update!(species_params)
       render status: 200, json: {
-        message: "#{@species.name} has been successfully updated."
+        message: "#{@species.species_name} has been successfully updated."
       }
     end
   end
 
   def destroy
     @species = Species.find(params[:id])
-    if @species.destroy
+    if @species.destroy!
       render status: 200, json: {
-        message: "#{@species.name} has been successfully removed."
+        message: "#{@species.species_name} has been successfully removed."
       }
     end
   end

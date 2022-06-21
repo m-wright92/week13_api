@@ -13,7 +13,7 @@ class PetsController < ApplicationController
 
   def create
     @species = Species.find(params[:species_id])
-    @pet = Species.pet.create!(pet_params)
+    @pet = Pet.create!(pet_params)
     json_response(@pet, :created)
   end
 
