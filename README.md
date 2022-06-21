@@ -28,6 +28,8 @@
 * Run `rails s` in the terminal from the root directory to start the server
 
 ## Endpoints
+(Accepted params. For Species it must have species_name and latin_name.
+For pets it must have name, klass, level(from 1-20), and a Species_id which can be found in the route. Pets also have an optional paramater which is Quote)
 * Open up postman
 * For species [GET, POST] http://localhost:3000/species
 * To update a species name [PUT] http://localhost:3000/species/[species_id]?species_name=[updated name]
