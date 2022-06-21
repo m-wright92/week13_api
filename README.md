@@ -32,11 +32,12 @@
 For pets it must have name, klass, level(from 1-20), and a Species_id which can be found in the route. Pets also have an optional paramater which is Quote)
 * Open up postman
 * For species [GET, POST] http://localhost:3000/species
-* To update a species name [PUT] http://localhost:3000/species/[species_id]?species_name=[updated name]
-* To update a species latin_name [PUT] http://localhost:3000/species/[species_id]?latin_name=[updated latin name]
+* To update a species name [PUT] http://localhost:3000/species/[species_id]?species_name=[updated_name]
+* To update a species latin_name [PUT] http://localhost:3000/species/[species_id]?latin_name=[updated_latin
+_name]
 * To delete a species [DELETE] http://localhost:3000/species/[species_id]
 * To view all pets of a species [GET] http://localhost:3000/species/[species_id]/pets
-* To add a pet to a species [POST] localhost:3000/species/[species_id]/?name=[desired_name]&klass=[desired_klass]&level=[level_between_1-20]&quote[desired_quote*]
+* To add a pet to a species [POST] http://localhost:3000/species/[species_id]/?name=[desired_name]&klass=[desired_klass]&level=[level_between_1-20]&quote[desired_quote*]
 * To delete a pet, [DELETE] http://localhost:3000/species/[species_id]/pets/[pet_id]
 * For paginated response [GET] localhost:3000/species?page=[desired_page#]
 
